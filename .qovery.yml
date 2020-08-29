@@ -1,0 +1,10 @@
+application:
+  name: discord-bot
+  project: discord-bot
+  cloud_region: aws/us-east-2
+routers:
+- name: main
+  routes:
+  - application_name: discord-bot
+    paths:
+    - /
