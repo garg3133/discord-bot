@@ -1,6 +1,6 @@
 exports.run = async (bot, msg, year) => {
 
-    if (!year) {
+    if (year === undefined) {
         msg.channel.send("Enter command as `-batch <year>` to get your batch role.");
         return;
     }

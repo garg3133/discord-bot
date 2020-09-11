@@ -3,7 +3,7 @@ const allowedSelfRoles = ['Competitive Programmer','Developer','Gamer', 'Linux',
 exports.run = (client,message,args) => {
     let member = message.member;
 
-    if (!args) {
+    if (args === undefined) {
         message.channel.send("Available roles are `'Competitive Programmer','Developer','Gamer', 'Linux', 'Windows'`");
         return;
     }
